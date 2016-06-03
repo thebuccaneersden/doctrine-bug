@@ -75,6 +75,22 @@ This project was an attempt to isolate the issue. As mentioned, this bug would n
 
 [http://php.net/manual/en/function.gc-collect-cycles.php](http://php.net/manual/en/function.gc-collect-cycles.php)
 
+To illustrate what I believe is going on:
+
+```
+   | New Entities    | OID =    | Entity lookup    | Doctrine Action |
+   | --------------- | -------- | ---------------- | --------------- |
+1. | Store entity 1  | oid = A  | MISS             | Insert to DB    |
+2. | Store entity 2  | oid = B  | MISS             | Insert to DB    |
+3. | Store entity 3  | oid = C  | MISS             | Insert to DB    |
+   | ---------------   --------   ----------------   --------------- |
+4. |              ~~~ GARBAGE COLLECTION KICKS IN! ~~~               |
+   | ---------------   --------   ----------------   --------------- |
+5. | Store entity 4  | oid = A  | HIT              | Do nothing      |
+6.   etc etc...
+
+```
+
 
 ### TL;DR
 
