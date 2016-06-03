@@ -75,7 +75,7 @@ This project was an attempt to isolate the issue. As mentioned, this bug would n
 
 [http://php.net/manual/en/function.gc-collect-cycles.php](http://php.net/manual/en/function.gc-collect-cycles.php)
 
-To illustrate what I believe is going on:
+To illustrate what I believe is going on (in pseudo whatever):
 
 ```
    | New Entities    | OID =    | Entity lookup    | Doctrine Action |
