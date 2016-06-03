@@ -128,3 +128,8 @@ This is what happens when you run the test for Doctrine + PHP Unit mixed in with
 ```$ ./vendor/bin/phpunit --repeat 10000 -c ./tests/phpunit-ci.xml```
 
 ![alt tag](http://i.imgur.com/BDp2fjC.gif)
+
+^ This one is interesting, because you can see that at the beginning, the failures don't appear to have a specific pattern, but a pattern does form over time.
+
+
+
