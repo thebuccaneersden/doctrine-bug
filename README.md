@@ -86,7 +86,7 @@ To illustrate what I believe is going on:
    | ---------------   --------   ----------------   --------------- |
 4. |              ~~~ GARBAGE COLLECTION KICKS IN! ~~~               |
    | ---------------   --------   ----------------   --------------- |
-5. | Store entity 4  | oid = A  | HIT              | Do nothing      |
+5. | Store entity 4  | oid = A  | HIT              | Do nothing      | <~ Should insert!
 6.   etc etc...
 
 ```
