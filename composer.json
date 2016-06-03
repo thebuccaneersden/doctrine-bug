@@ -1,0 +1,16 @@
+{
+    "description": "Doctrine bug",
+    "name": "doctrine-bug",
+    "type": "project",
+    "homepage": "http://dev/null",
+    "license": "",
+    "support": {},
+    "require": {
+        "php": ">=5.2.4",
+        "ext-hash": ">=v1.0",
+        "monolog/monolog": "1.5.0",
+        "doctrine/orm": "2.4.4",
+        "phpunit/phpunit": "4.8.16",
+        "doctrine/cache": "1.4.0"
+    }
+}
